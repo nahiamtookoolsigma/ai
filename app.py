@@ -23,3 +23,4 @@ def moderate(payload: TextIn):
         "flagged": flagged,
         "debug": {"input": payload.text}
     }
+ 

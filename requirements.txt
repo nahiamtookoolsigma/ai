@@ -1,5 +1,11 @@
 fastapi
 uvicorn[standard]
-torch
-transformers
-detoxify
+
+# CPU-only PyTorch (small, no CUDA nonsense)
+torch==2.1.0+cpu -f https://download.pytorch.org/whl/cpu
+
+# Transformers (works fine on CPU)
+transformers==4.36.2
+
+# Detoxify (uses PyTorch & Transformers)
+detoxify==0.5.1

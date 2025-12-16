@@ -1,5 +1,1 @@
-fastapi
-uvicorn[standard]
-torch==2.5.1
-transformers
-detoxify
+

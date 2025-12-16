@@ -9,8 +9,8 @@ const subs = new Set(); // in-mem for demo; swap for DB in real life
 
 webpush.setVapidDetails(
   'mailto:you@example.com',
-  'BJ…yourVapidPublicKey…',
-  'HH…yourVapidPrivateKey…'
+  process.env.VAPID_PUBLIC,
+  process.env.VAPID_PRIVATE
 );
 
 app.post('/save-sub', (req,res) => {
